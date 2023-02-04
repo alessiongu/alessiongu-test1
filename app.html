@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALESSIO - Home</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+  </head>
+  
+  
+  
+  <body>
+    <header>
+      <div class="headeritems">
+        <a href="start.html"><h1>alessio</h1></a>
+
+        <a class="burger">☰</a>
+      </div>
+
+      <nav>
+        <a href="start.html">home</a>
+        <a href="projects/projects.html">projects</a>
+        <a href="about/about.html">about</a>
+        <a href="contact/contact.html">contact</a>
+      </nav>
+    </header>
+
+    <section class="landingpage">
+      <div class="landingimg"></div>
+
+      <div class="iconcontainer">
+        <div class="landingicon">
+          <a href="https://www.instagram.com/alessiongu/">
+            <img src="img/instagram.svg" />
+          </a>
+          <a href="https://www.linkedin.com/in/alessio-blaser-a234371b5/">
+            <img src="img/likedin.svg" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionbody">
+      <section class="about">
+        <div class="starth1">
+          <h2><a href="about/about.html">About &rarr;</a></h2>
+        </div>
+
+        <div>
+          <p cl>
+            Hi! I’m a first year Multimedia Producer Way-Up at Swisscom. My
+            expertise lies withing Photography, Videography, Editorial Design.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="starth1">
+          <h2><a href="projects/projects.html">Projects &rarr;</a></h2>
+        </div>
+
+
+      <div class="projectsbody">        
+        <a href="projects/singleprojects/magazine.html">
+        <div
+          class="magazineproject"
+          style="background-image: url(img/projects/01magazine/magazinecover.jpg);">
+          <div class="overlay">
+            <div class="overlaytext">
+              <h3>Birds-Eye-View Magazine</h3>
+              <p>Print with a different perspective</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="projects/singleprojects/magazine.html">
+        <div
+          class="magazineproject"
+          style="background-image: url(img/projects/01magazine/magazinecover.jpg);">
+          <div class="overlay">
+            <div class="overlaytext">
+              <h3>Birds-Eye-View Magazine</h3>
+              <p>Print with a different perspective</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    
+      </section>
+    </section>
+
+    <footer>
+      <section class="footerelements">
+        <div class="buttoncontainer">
+          <a href="mailto:ale.blaser1@gmail.com">
+            <button class="contactbutton">contact
+            </button>
+          </a>
+        </div>
+    
+        <div class="footerfont">
+          <div class="footerlinkscontainer">
+        <div class="footerlinks">
+          <a href="https://www.instagram.com/alessiongu/" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/alessio-blaser-a234371b5/" target="_blank">Linkedin</a>
+        </div>
+      </div>
+    
+        <div class="footernav">
+          <a href="projects/projects.html">projects</a>
+          <a href="about/about.html" >about</a>
+          <a href="contact/contact.html">contact</a>
+        </div>
+      </div>
+    
+    
+      </section>
+    </footer>
+
+
+
+
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const items = document.querySelector("nav");
+      burger.addEventListener("click", function () {
+        if (items.style.display === "flex") {
+          items.style.display = "none";
+        } else {
+          items.style.display = "flex";
+        }
+      });
+      document.querySelector("nav").addEventListener("click", function () {
+        if(document.body.clientWidth < 860) {
+          items.style.display = "none";
+        }
+      });
+
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+          $("header").addClass("header-scroll");
+        } else {
+          $("header").removeClass("header-scroll");
+        }
+      });
+    </script>
+  </body>
+</html>

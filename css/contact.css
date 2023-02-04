@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+  }
+  
+  body {
+    background-color: #707070;
+    margin: 0%;
+  }
+  
+  h2{
+    text-transform: uppercase;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  header h1{
+    text-decoration: solid;
+}
+
+  .landingimg {
+      width: 100vw;
+  }
+
+
+  header {
+    position: fixed;
+    background-color: transparent;
+    text-transform: uppercase;
+    width: 100%;
+    transition: 0.4s;
+  }
+
+
+
+  header h1 {
+    color: #707070
+  }
+
+.headeritems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+}
+
+  
+  nav .burger {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 24px;
+  }
+
+  .burger {
+    z-index: 10;
+    padding: 1em;
+    color: #707070
+  }
+  
+  nav .topnav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav .topnav a {
+    padding: 12px;
+  }
+  
+  nav {
+    position: absolute;
+    background-color: #e14433e6;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    top: 0;
+    align-items: stretch;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: larger;
+  }
+  
+  nav a {
+    color: #efedea;
+    text-decoration: none;
+    padding: 12px;
+  }
+
+  h2 a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+
+
+.sectionbody{
+    margin: 10vw;
+    color: #fdfbf6;
+    
+}
+
+.starth1 h2{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #efedea;
+    margin-bottom: 25px;
+    padding-top: 10vw;
+
+}
+  
+
+  footer {
+    width: 100%;
+    background-color: #efedea;
+    text-align: center;
+    padding-bottom: 2rem;
+
+  }
+  
+  .buttoncontainer {
+
+    margin-left: 10vw;
+    margin-bottom: 20vh;
+
+
+  }
+  
+  .contactbutton {
+    border: solid 1px;
+    background-color: transparent;
+    color: #efedea;
+    width: 80vw;
+    height: 30px;
+    text-transform: uppercase;
+    justify-content: space-around;
+  }
+  
+  .footerfont a {
+    color: #707070;
+  }
+  
+  .footerlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 10rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+   
+  }
+  
+  .footerlinks a{
+    color: #e04232;
+  }
+  
+  .footernav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    align-items: stretch;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .footernav a {
+    padding: 3px;
+  }
+
+
+  @media screen and (min-width: 550px) {
+
+    header h1 {
+        color: #efedea
+      }
+
+      .burger{
+          color: #efedea;
+      }
+      
+    .sectionbody{
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 6vw;
+        display: flex;
+    }
+
+    .starth1 h2{
+        padding-top: 0;
+    }
+    
+    .landingimg{
+          width: 37vw;
+      }
+
+      .body{
+          display: flex;
+          padding-top: 100px;
+          margin-left: 10vw;
+          margin-right: 10vw;
+          margin-bottom: 40vh;
+
+      }
+
+      .contact{
+        width: 37vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+    }
+
+    .buttoncontainer {
+
+        margin-top: -37vh;
+    
+    
+      }
+
+
+      }
+  
+
+
+  @media screen and (min-width: 860px) {
+ 
+  
+    .burger {
+      display: none;
+      color: #efedea;
+    }
+    
+    nav .topnav {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    nav .topnav a {
+      padding: 12px;
+    }
+    
+    nav {
+      display: flex;
+      flex-direction: row;
+      height: auto;
+      background-color: transparent;
+      justify-content: flex-end;
+    }
+    nav a {
+      color: #efedea;
+    }
+    
+    
+    .contactbutton {
+
+      height: 30px;
+    }
+    
+  
+  }
+
+  @media screen and (min-width: 1230px) {
+    .magazinemainimage img{
+        width: 1230px;
+    }
+
+    .footerlinkscontainer{
+    display: flex;
+    justify-content: center;
+    }
+
+    .footerlinks{
+        justify-content: space-between;
+        width: 425px;
+        padding-left:0;
+    }
+
+    .magazinetopcontent{
+        width: 984px;
+
+    }
+}
+
+@media ( orientation: landscape){
+    .header-scroll {
+        background-color: #efedea;
+        font-style: #efedea;
+        transition: 0.4s;
+      }
+    
+}

@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+  }
+
+body{
+    background-color: #efedea;
+    margin: 0%;
+}
+
+h2{
+    text-transform: uppercase;
+    color: black;
+  }
+  
+a{
+    text-decoration: none;
+  }
+
+header{
+    position: fixed;
+    background-color: #efedea;
+    text-transform: uppercase;
+    color: black;
+    width: 100%;
+    top: 0;
+}
+
+.header-scroll {
+    background-color: #efedea;
+    transition: 0.4s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  header h1 {
+    color: #707070
+  }
+
+.headeritems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+}
+
+.burger {
+    z-index: 10;
+    padding: 1em;
+    color: #707070;
+  }
+  
+  nav .burger {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 24px;
+  }
+  
+  nav .topnav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav .topnav a {
+    padding: 12px;
+  }
+
+  nav {
+    position: absolute;
+    background-color: #e14433e6;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    top: 0;
+    align-items: stretch;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: larger;
+  }
+
+  nav a {
+    color: #efedea;
+    text-decoration: none;
+    padding: 12px;
+  }
+
+iframe{
+    width: 100%;
+    height: 56.25vw;  
+    padding-top: 56px;
+
+
+}
+
+h2 a{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.sectionbody{
+    margin: 10vw;
+}
+
+.aboutheader{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #707070;
+    margin-bottom: 25px;
+}
+
+.aboutcontent{
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    max-width: 670px;
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraphheader{
+    padding-bottom: 0.25rem;
+    padding-top: 1rem;
+}
+
+
+
+
+.aboutcontainer{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: #707070;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  
+  .buttoncontainer {
+    padding-top: 5rem;
+  }
+  
+  .contactbutton {
+    border: solid 1px;
+    background-color: transparent;
+    color: #efedea;
+    width: 50vw;
+    height: 30px;
+    text-transform: uppercase;
+    justify-content: space-around;
+  }
+  
+  .footerfont a {
+    color: #efedea;
+  }
+  
+  .footerlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+   
+  }
+  
+  .footerlinks a{
+    color: #e04232;
+  }
+  
+  .footernav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    align-items: stretch;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .footernav a {
+    padding: 3px;
+  }
+
+  @media screen and (min-width: 860px) {
+ 
+  
+    .burger {
+      display: none;
+    }
+    
+    nav .topnav {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    nav .topnav a {
+      padding: 12px;
+    }
+    
+    nav {
+      display: flex;
+      flex-direction: row;
+      height: auto;
+      background-color: transparent;
+      justify-content: flex-end;
+    }
+    nav a {
+      color: #707070;
+    }
+   
+    .contactbutton {
+      width: 425px;
+      height: 30px;
+    }
+    
+    .sectionbody{
+      margin-top: 200px;
+    }
+  
+  }
+  
+
+  @media screen and (min-width: 1230px) {
+    .magazinemainimage img{
+        width: 1230px;
+    }
+
+    .footerlinkscontainer{
+    display: flex;
+    justify-content: center;
+    }
+
+    .footerlinks{
+        justify-content: space-between;
+        width: 425px;
+        padding-left:0;
+    }
+
+    .magazinetopcontent{
+        width: 984px;
+
+    }
+}
+
+@media screen and (min-width: 1300px) {
+  .sectionbody{
+    margin-bottom: 15vw;
+  }
+
+.aboutcontent {
+  max-width: 840px;
+
+}
+}

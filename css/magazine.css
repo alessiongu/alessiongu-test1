@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+  }
+
+  h2{
+    text-transform: uppercase;
+  }
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #707070;
+    margin: 0%
+
+}
+
+header{
+    position: fixed;
+    background-color: transparent;
+    text-transform:uppercase;
+    width: 100%;
+    top: 0;
+}
+
+.header-scroll {
+    background-color: #707070;
+    transition: 0.4s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+header h1 {
+    color: #efedea;
+    transition: 0.4s;
+    text-decoration: solid;
+  }
+
+.headeritems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+}
+
+.burger {
+    z-index: 10;
+    padding: 1em;
+    color: #efedea;
+}
+
+
+  nav .burger {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 24px;
+  }
+  
+  nav .topnav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav .topnav a {
+    padding: 12px;
+  }
+  
+
+nav {
+    position: absolute;
+    background-color: #e14433e6;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    top: 0;
+    align-items: stretch;
+    text-align: center;
+    text-transform:uppercase;
+    font-size: larger;
+  }
+
+
+  nav a {
+    color: #efedea;
+    text-decoration: none;
+    padding: 12px;
+  }
+
+
+h2 a{
+    color: #efedea;
+    text-decoration: none;
+    display: block;
+}
+
+.sectionbody{
+    margin: 10vw;
+    padding-top: 100px;
+}
+
+
+.magazinetopcontainer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.magazinetopcontent{
+    color: #efedea;
+}
+
+.starth1 h2{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #efedea;
+    margin-bottom: 25px;
+
+}
+
+.starth1p{
+    padding-bottom: 15px;
+    border-bottom: 2px solid #efedea;
+    margin-bottom: 25px;
+}
+
+.magazinemainimage img{
+    width: 100vw;
+    height: auto;
+
+}
+
+.magazinetop{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+}
+
+.magazinemainimagecontainer{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+
+}
+
+img, .items {
+    border: 2px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column {
+    flex: 1;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+
+
+
+  footer {
+    width: 100%;
+    background: #efedea;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  
+  .buttoncontainer {
+    padding-top: 5rem;
+  }
+  
+  .contactbutton {
+    border: solid 1px;
+    background-color: transparent;
+    color: #707070;
+    width: 50vw;
+    height: 30px;
+    text-transform: uppercase;
+    justify-content: space-around;
+  }
+  
+  .footerfont a {
+    color: #707070;
+  }
+  
+  .footerlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+
+
+  .footerlinks a{
+    color: #e04232;
+  }
+  
+  .footernav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    align-items: stretch;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .footernav a {
+    padding: 3px;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .column {
+      flex: 48%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 50%;
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 860px) {
+ 
+  
+    .burger {
+      display: none;
+    }
+    
+    nav .topnav {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    nav .topnav a {
+      padding: 12px;
+    }
+
+     nav a{
+       color: #efedea;
+     }
+    
+    nav {
+      display: flex;
+      flex-direction: row;
+      height: auto;
+      background-color: transparent;
+      justify-content: flex-end;
+    }
+    
+    .magazinemainimage img{
+        margin-top: -0;
+        }
+    
+    .contactbutton {
+      width: 425px;
+      height: 30px;
+    }
+}
+
+@media screen and (min-width: 1230px) {
+    .magazinemainimage img{
+        width: 1230px;
+    }
+
+    .footerlinkscontainer{
+    display: flex;
+    justify-content: center;
+    }
+
+    .footerlinks{
+        justify-content: space-between;
+        width: 425px;
+        padding-left:0;
+    }
+
+    .magazinetopcontent{
+        width: 984px;
+
+    }
+}
