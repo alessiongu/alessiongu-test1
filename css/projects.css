@@ -45,6 +45,7 @@ header h1 {
   align-items: center;
   justify-content: space-between;
   padding-left: 1em;
+  height: 46.5px;
 }
 
 .burger {
